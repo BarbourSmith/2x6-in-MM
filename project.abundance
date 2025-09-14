@@ -17,13 +17,13 @@
         {
             "atomType": "Output",
             "name": "Output",
-            "x": 0.910941475826972,
-            "y": 0.5509138381201044,
+            "x": 0.9784431137724551,
+            "y": 0.4640371229698376,
             "uniqueID": "7098ef15-1769-4161-ac84-f24c658385e4",
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": "74b8ed2b-ac6c-450e-8dba-25c9d2a6a56a",
+                    "ioValue": "9096df19-c9d8-4741-afd3-d93d526ca5e6",
                     "currentEquation": null
                 }
             ],
@@ -72,7 +72,7 @@
         {
             "atomType": "Input",
             "name": "Input (1)",
-            "x": 0.07755,
+            "x": 0.024749999999999998,
             "y": 0.4830287206266318,
             "uniqueID": "8bdf6701-339f-4da5-905a-8087d2e4bb49",
             "ioValues": [],
@@ -80,30 +80,10 @@
             "type": "number"
         },
         {
-            "atomType": "Rectangle",
-            "name": "Rectangle",
-            "x": 0.2366412213740458,
-            "y": 0.6579634464751959,
-            "uniqueID": "3cea8fef-8f04-43d8-af17-b78547cbf205",
-            "ioValues": [
-                {
-                    "name": "x length",
-                    "ioValue": 10,
-                    "currentEquation": null
-                },
-                {
-                    "name": "y length",
-                    "ioValue": 10,
-                    "currentEquation": null
-                }
-            ],
-            "description": "Creates a new rectangle."
-        },
-        {
             "atomType": "Rotate",
             "name": "Rotate",
-            "x": 0.38167938931297707,
-            "y": 0.4725848563968668,
+            "x": 0.5215568862275449,
+            "y": 0.3619489559164733,
             "uniqueID": "b76c4491-0a47-41b4-a9d3-21aca528a558",
             "ioValues": [
                 {
@@ -114,12 +94,12 @@
                 {
                     "name": "x-axis degrees",
                     "ioValue": 90,
-                    "currentEquation": "90"
+                    "currentEquation": null
                 },
                 {
                     "name": "y-axis degrees",
                     "ioValue": 90,
-                    "currentEquation": "90"
+                    "currentEquation": null
                 },
                 {
                     "name": "z-axis degrees",
@@ -130,36 +110,18 @@
             "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
         },
         {
-            "atomType": "Molecule",
-            "name": "Molecule",
-            "x": 0.6844783715012723,
-            "y": 0.30287206266318534,
-            "uniqueID": "adc34ee5-8134-4a42-932c-5ffb8633c6a3",
-            "ioValues": [],
-            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
-            "topLevel": false,
-            "allAtoms": [
-                {
-                    "atomType": "Output",
-                    "name": "Output",
-                    "x": 0.98,
-                    "y": 0.5,
-                    "uniqueID": "9ef16c6a-d12e-450e-9bab-e6947ed8f3c0",
-                    "ioValues": [],
-                    "description": "Connect geometry here to make it available in the next level up. "
-                }
-            ],
-            "allConnectors": [],
-            "fileTypeVersion": 1,
-            "compiledBom": {}
-        },
-        {
             "atomType": "Add-BOM-Tag",
             "name": "Add BOM Tag",
-            "x": 0.55470737913486,
-            "y": 0.6266318537859007,
+            "x": 0.6952095808383233,
+            "y": 0.5777262180974478,
             "uniqueID": "9096df19-c9d8-4741-afd3-d93d526ca5e6",
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "b76c4491-0a47-41b4-a9d3-21aca528a558",
+                    "currentEquation": null
+                }
+            ],
             "description": "Adds a Bill Of Materials tag which appears in molecules containing this atom and in the GitHub project bill of materials.",
             "BOMitem": {
                 "BOMitemName": "name",
@@ -178,12 +140,6 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
-            "ap1ID": "74b8ed2b-ac6c-450e-8dba-25c9d2a6a56a",
-            "ap2ID": "7098ef15-1769-4161-ac84-f24c658385e4"
-        },
-        {
-            "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap1ID": "74b8ed2b-ac6c-450e-8dba-25c9d2a6a56a",
             "ap2ID": "b76c4491-0a47-41b4-a9d3-21aca528a558"
@@ -193,10 +149,29 @@
             "ap2Name": "height",
             "ap1ID": "8bdf6701-339f-4da5-905a-8087d2e4bb49",
             "ap2ID": "74b8ed2b-ac6c-450e-8dba-25c9d2a6a56a"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap1ID": "b76c4491-0a47-41b4-a9d3-21aca528a558",
+            "ap2ID": "9096df19-c9d8-4741-afd3-d93d526ca5e6"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap1ID": "9096df19-c9d8-4741-afd3-d93d526ca5e6",
+            "ap2ID": "7098ef15-1769-4161-ac84-f24c658385e4"
         }
     ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
-    "compiledBom": [],
+    "compiledBom": [
+        {
+            "BOMitemName": "name",
+            "numberNeeded": 1,
+            "costUSD": 0,
+            "source": "www.example.com"
+        }
+    ],
     "filetypeVersion": 1
 }
