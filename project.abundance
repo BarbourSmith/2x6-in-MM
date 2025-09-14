@@ -102,8 +102,8 @@
         {
             "atomType": "Rotate",
             "name": "Rotate",
-            "x": 0.5267175572519084,
-            "y": 0.5639686684073107,
+            "x": 0.38167938931297707,
+            "y": 0.4725848563968668,
             "uniqueID": "b76c4491-0a47-41b4-a9d3-21aca528a558",
             "ioValues": [
                 {
@@ -152,6 +152,21 @@
             "allConnectors": [],
             "fileTypeVersion": 1,
             "compiledBom": {}
+        },
+        {
+            "atomType": "Add-BOM-Tag",
+            "name": "Add BOM Tag",
+            "x": 0.55470737913486,
+            "y": 0.6266318537859007,
+            "uniqueID": "9096df19-c9d8-4741-afd3-d93d526ca5e6",
+            "ioValues": [],
+            "description": "Adds a Bill Of Materials tag which appears in molecules containing this atom and in the GitHub project bill of materials.",
+            "BOMitem": {
+                "BOMitemName": "name",
+                "numberNeeded": 1,
+                "costUSD": 0,
+                "source": "www.example.com"
+            }
         }
     ],
     "allConnectors": [
